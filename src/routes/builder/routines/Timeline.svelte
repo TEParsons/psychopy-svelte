@@ -15,7 +15,44 @@
 <div class=comp-overshoot-timeline></div>
 
 <style>
-    @import url(./timeline.css);
+    .comp-timeline {
+        display: grid;
+        position: relative;
+        width: 100%;
+        grid-column-start: timeline;
+    }
+    .comp-overshoot-timeline {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .comp-timeline {
+        display: grid;
+        position: relative;
+        width: 100%;
+        grid-column-start: timeline;
+    }
+    .comp-timeline-tick {
+        color: var(--outline);
+        border-left: 1px solid var(--overlay);
+        width: 100%;
+        text-align: right;
+    }.comp-timeline-tick:last-child {
+        border-right: 1px solid var(--overlay);
+    }
+    .comp-timeline-tick label {
+        padding-right: .5rem;
+    }
+    .comp-timeline-tick:last-child {
+        border-right: 0;
+    }
+
+    .comp-overshoot-timeline {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
     .comp-timeline {
         align-content: end;

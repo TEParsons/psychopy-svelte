@@ -68,14 +68,5 @@
     button img {
         height: 2.25rem;
     }
-    .btn-label {
-        position: absolute;
-        top: calc(100% + .5rem);
-        padding: .25rem .5rem;
-        border-radius: .5rem;
-        background-color: var(--outline);
-        color: var(--text-on-outline);
-        text-wrap: nowrap;
-    }
 
 </style>

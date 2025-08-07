@@ -130,11 +130,52 @@
 ></Dialog>
 
 <style>
-    @import url("./timeline.css");
+    .comp-timeline {
+        display: grid;
+        position: relative;
+        width: 100%;
+        grid-column-start: timeline;
+    }
+    .comp-overshoot-timeline {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
-    .context-menu {
-        position: fixed;
-        z-index: 10;
+    .comp-timeline-bar {
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+    }
+
+    .comp-overshoot-bar {
+        position: absolute;
+        left: 0; right: 0;
+        top: 25%;
+        bottom: 25%;
+    }
+    .comp-timeline {
+        display: grid;
+        position: relative;
+        width: 100%;
+        grid-column-start: timeline;
+    }
+    .comp-timeline-tick {
+        color: var(--outline);
+        border-left: 1px solid var(--overlay);
+        width: 100%;
+        text-align: right;
+    }.comp-timeline-tick:last-child {
+        border-right: 1px solid var(--overlay);
+    }
+    .comp-timeline-tick:last-child {
+        border-right: 0;
+    }
+
+    .comp-overshoot-timeline {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
     .comp-name {
@@ -148,26 +189,5 @@
         font-size: 1.2rem;
         padding: .5rem;
         justify-self: right;
-    }
-    .hidden {
-        opacity: 0;
-    }
-    .component-ctrls {
-        display: grid;
-        grid-auto-flow: column;
-        z-index: 2;
-    }
-    button {
-        opacity: 25%;
-        background-color: transparent;
-        padding: 0rem;
-        margin: .25rem;
-    }
-    button:enabled:hover {
-        opacity: 100%;
-    }
-    button img {
-        height: 1rem;
-        width: 1rem;
     }
 </style>

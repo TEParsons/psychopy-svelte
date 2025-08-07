@@ -6,7 +6,7 @@
         /** @prop @type {string} Label for this button */
         label,
         /** @prop @type {string|undefined} Hover text for this button, if any */
-        tooltip,
+        tooltip=undefined,
         /** @interface */
         children
     } = $props()

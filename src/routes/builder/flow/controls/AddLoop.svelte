@@ -59,6 +59,3 @@
 >
     <ParamsNotebook element={element} bind:this={notebook}/>
 </Dialog>
-
-<style>
-</style>
